@@ -1,7 +1,41 @@
 @import url('https://fonts.googleapis.com/css2?family=Anton+SC&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
 
+//*Variables*/
+$azul: #1992D4;
+$amarillo: #F0B429;
+$gris:#E2E8F0;
+$blanco: #FFFFFF;
+
+//*Configuracion general*/
 *{
     font-family: roboto;
     font-size: 16px;
     margin: 0px auto;
+}
+
+//*Configuracion del SVG*/
+    //*Dashboard*/
+header{
+    section{
+        svg{
+            width: 30px;
+            height: 30px;
+            fill: $blanco;
+        }
+    }
+}
+
+aside{
+    svg{
+        width: 24px;
+        height: 24px;
+        fill: $blanco;
+    }
+}
+
+/*-----------------------------
+
+//*Dasborard*/
+header{
+    background-color: $azul;
 }

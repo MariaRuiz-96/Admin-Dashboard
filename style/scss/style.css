@@ -3,4 +3,23 @@
   font-family: roboto;
   font-size: 16px;
   margin: 0px auto;
+}
+
+header section svg {
+  width: 30px;
+  height: 30px;
+  fill: #FFFFFF;
+}
+
+aside svg {
+  width: 24px;
+  height: 24px;
+  fill: #FFFFFF;
+}
+
+/*-----------------------------
+
+//*Dasborard*/
+header {
+  background-color: #1992D4;
 }/*# sourceMappingURL=style.css.map */
