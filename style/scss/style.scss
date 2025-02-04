@@ -5,6 +5,7 @@ $azul: #1992D4;
 $amarillo: #F0B429;
 $gris:#E2E8F0;
 $blanco: #FFFFFF;
+$negro: #000000;
 
 //*Configuracion general*/
 *{
@@ -19,7 +20,7 @@ body{
 }
 
 //*Configuracion del SVG*/
-    //*Dashboard*/
+    //*Barra lateral*/
 header{
     section{
         svg{
@@ -38,9 +39,18 @@ aside{
     }
 }
 
+    //*Contenido*/
+main{
+    svg{
+        width: 24px;
+        height: 24px;
+        fill: $negro;
+    }
+}
+
 /*-----------------------------
 
-//*Dasborard*/
+//*Barra lateral*/
 header{
     background-color: $azul;
     width: 100%;
@@ -51,7 +61,8 @@ header{
     section{
         padding-bottom: 40px;
 
-        display: flex;
+        display: grid;
+        grid-template-columns: 48px 1fr;
         align-items: center;
         gap: 10px;
 
@@ -67,10 +78,15 @@ header{
     ul{
         display: grid;
         grid-template-columns: 1fr;
-        gap: 10px;
+        gap: 15px;
         list-style: none;
 
         li{
+            display: grid;
+            grid-template-columns: 24px 1fr;
+            gap: 10;
+            align-items: center;
+            
             a{
                 color: $blanco;
                 text-decoration: none;
@@ -88,3 +104,101 @@ header{
     }
 
 }
+
+
+//*Seccion superior*/
+
+#top-section{
+
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    gap:10px ;
+    row-gap: 15px;
+    padding: 20px;
+
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+
+    #busqueda{
+        display: grid;
+        grid-template-columns: 24px 1fr;
+        align-items: center;
+        gap: 15px;
+
+        input[type="text"]{
+            padding: 0px;
+            height: 30px;
+            background-color: $gris;
+            border-radius: 25px;
+            border-style: none;
+        }
+    }
+
+    #perfil-top{
+        display: grid;
+        grid-template-columns: 2fr 1fr 1fr;
+        align-items: center;
+
+        svg{
+            justify-self:end
+        }
+
+        #img-pequeña-perfil{
+            width: 48px;
+            height: 48px;
+            background-color: $gris;
+            border-radius: 25px;
+            justify-self:end;
+            margin-right: 10px;
+        }
+        #nombre-perfil{
+            font-size: 18px;
+            font-weight: bold;
+            justify-self:end
+        }
+    }
+
+    #saludo-perfil{
+        display: grid;
+        grid-template-columns: 70px 1fr;
+        
+        gap: 15px;
+
+
+        #img-grande-perfil{
+            width: 70px;
+            height: 70px;
+            background-color: $gris;
+            border-radius: 75px;
+        }
+
+        #saludo{
+            p{
+                font-size: 12px;
+                font-weight: bold;
+            }
+
+            #perfil-nick{
+                font-size: 24px;
+                margin-top: 5px;
+            }
+        }
+    }
+
+    #interaciones{
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        align-items: center;
+        justify-items: end;
+
+       input{
+        width: 110px;
+        height: 35px;
+        font-size: 16px;
+        color: $blanco;
+        background-color: $azul;
+        border-style: none;
+        border-radius: 50px;
+       }
+    }
+}
+
