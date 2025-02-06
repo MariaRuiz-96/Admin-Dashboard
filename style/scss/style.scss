@@ -271,4 +271,37 @@ header{
         }
     }
 
+    #contenedor-anuncios-tendencias{
+
+        #cartas-anuncios{
+            background-color: $blanco;
+            border-radius: 10px;
+            overflow: hidden;
+            padding: 25px;
+
+            article{
+                border-bottom: 0.5px solid $gris-letra;
+                padding-bottom: 15px;
+                padding-top: 15px;
+
+                h3{
+                    font-size: 14px;
+                }
+
+                p{
+                    font-size: 12px;
+                    color: $gris-letra;
+                }
+            }
+            
+            article:first-child{
+                padding-top: 0px;
+            }
+
+            article:last-child{
+                border: none;
+                padding-bottom: 0px;
+            }
+        }
+    }
 }
