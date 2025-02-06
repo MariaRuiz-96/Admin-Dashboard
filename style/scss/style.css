@@ -79,7 +79,6 @@ header #menu-principal {
   gap: 10px;
   row-gap: 15px;
   padding: 20px;
-  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
 }
 #top-section #busqueda {
   display: grid;
@@ -148,4 +147,59 @@ header #menu-principal {
   background-color: #1992D4;
   border-style: none;
   border-radius: 50px;
+}
+
+#bottom-section {
+  background-color: #E2E8F0;
+  display: grid;
+  grid-template-columns: 3fr 1fr;
+  grid-row: span 1;
+  gap: 15px;
+  padding: 20px;
+  height: 78.5vh;
+}
+#bottom-section section h2 {
+  font-size: 24px;
+  margin-bottom: 10px;
+}
+#bottom-section #contenedor-proyectos {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr;
+  gap: 25px;
+  row-gap: 30px;
+}
+#bottom-section #contenedor-proyectos article {
+  display: grid;
+  grid-template-columns: 8px 1fr;
+  border-radius: 10px;
+  overflow: hidden;
+}
+#bottom-section #contenedor-proyectos article .linea {
+  background-color: #F0B429;
+}
+#bottom-section #contenedor-proyectos article .contenido-article {
+  background-color: #FFFFFF;
+  padding: 25px;
+  display: grid;
+  grid-template-columns: 1fr;
+}
+#bottom-section #contenedor-proyectos article .contenido-article h3 {
+  margin-bottom: 10px;
+}
+#bottom-section #contenedor-proyectos article .contenido-article p {
+  color: #8C8C8C;
+}
+#bottom-section #contenedor-proyectos article .contenido-article .iconos {
+  margin-top: 25px;
+  justify-self: flex-end;
+}
+#bottom-section #contenedor-proyectos article .contenido-article .iconos svg {
+  margin-left: 10px;
+}
+#bottom-section #contenedor-proyectos article h3 {
+  font-size: 18px;
+}
+#bottom-section #contenedor-proyectos article p {
+  font-size: 14px;
 }/*# sourceMappingURL=style.css.map */

@@ -6,6 +6,7 @@ $amarillo: #F0B429;
 $gris:#E2E8F0;
 $blanco: #FFFFFF;
 $negro: #000000;
+$gris-letra:#8C8C8C;
 
 //*Configuracion general*/
 *{
@@ -116,8 +117,6 @@ header{
     row-gap: 15px;
     padding: 20px;
 
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-
     #busqueda{
         display: grid;
         grid-template-columns: 24px 1fr;
@@ -202,3 +201,74 @@ header{
     }
 }
 
+#bottom-section{
+    background-color: $gris;
+    display: grid;
+    grid-template-columns: 3fr 1fr;
+    grid-row: span 1;
+    gap: 15px;
+    padding: 20px;
+    height: 78.5vh;
+
+    section{
+        h2{
+            font-size: 24px;
+            margin-bottom: 10px;
+        }
+    }
+
+
+    #contenedor-proyectos{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1fr 1fr 1fr;
+        gap: 25px;
+        row-gap: 30px;
+        
+
+        article{
+            display: grid;
+            grid-template-columns: 8px 1fr;
+            border-radius: 10px;
+            overflow: hidden;
+            
+            .linea{
+                background-color: $amarillo;
+            }
+            .contenido-article{
+                background-color: $blanco;
+                padding: 25px;
+
+                display: grid;
+                grid-template-columns: 1fr;
+
+                h3{
+                    margin-bottom: 10px;
+                }
+
+                p{
+                    color: $gris-letra;
+                }
+
+                .iconos{
+                    margin-top: 25px;
+                    justify-self: flex-end;
+                    
+                    svg{
+                        margin-left: 10px;
+                    }
+                }
+            }
+
+
+            h3{
+                font-size: 18px;
+            }
+
+            p{
+                font-size: 14px;
+            }
+        }
+    }
+
+}
