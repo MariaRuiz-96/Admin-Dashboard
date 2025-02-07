@@ -154,6 +154,23 @@ body main #top-section #saludo-perfil #perfil-nick {
   font-size: 24px;
   font-weight: bolder;
 }
+body main #top-section #interaciones {
+  display: grid;
+  align-items: center;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 25px;
+  padding: 20px;
+  padding-top: 0px;
+}
+body main #top-section #interaciones input {
+  background-color: #1992D4;
+  color: #FFFFFF;
+  font-size: 18px;
+  font-weight: bold;
+  border: none;
+  border-radius: 20px;
+  height: 40px;
+}
 body main #bottom-section {
   background-color: #E2E8F0;
 }/*# sourceMappingURL=style.css.map */
