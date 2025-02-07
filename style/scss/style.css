@@ -6,18 +6,6 @@
   padding: 0px;
 }
 
-header svg {
-  width: 48px;
-  height: 48px;
-  fill: #FFFFFF;
-}
-
-aside svg {
-  width: 24px;
-  height: 24px;
-  fill: #FFFFFF;
-}
-
 main svg {
   width: 24px;
   height: 24px;
@@ -34,6 +22,68 @@ body {
 body header {
   background-color: #1992D4;
   height: 100vh;
+}
+body header #titulo {
+  display: grid;
+  grid-template-columns: 48px 1fr;
+  align-items: center;
+  margin-bottom: 50px;
+  margin-top: 20px;
+  margin-left: 25px;
+}
+body header #titulo h1 {
+  font-size: 42px;
+  color: #FFFFFF;
+}
+body header #titulo svg {
+  width: 48px;
+  height: 48px;
+  fill: #FFFFFF;
+}
+body header aside {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 30px;
+  margin-left: 25px;
+}
+body header aside svg {
+  width: 26px;
+  height: 26px;
+  fill: #FFFFFF;
+}
+body header aside #menu-principal {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 10px;
+}
+body header aside #menu-principal li {
+  display: grid;
+  grid-template-columns: 24px 1fr;
+  align-items: center;
+  gap: 15px;
+}
+body header aside #menu-principal li a {
+  font-size: 24px;
+  font-weight: bold;
+  color: #FFFFFF;
+  text-decoration: none;
+}
+body header aside #menu-secundario {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 10px;
+}
+body header aside #menu-secundario li {
+  display: grid;
+  grid-template-columns: 24px 1fr;
+  align-items: center;
+  gap: 15px;
+}
+body header aside #menu-secundario li a {
+  font-size: 24px;
+  font-weight: bold;
+  color: #FFFFFF;
+  text-decoration: none;
 }
 body main {
   display: grid;

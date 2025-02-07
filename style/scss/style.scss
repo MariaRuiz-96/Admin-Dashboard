@@ -8,6 +8,26 @@ $blanco: #FFFFFF;
 $negro: #000000;
 $gris-letra:#8C8C8C;
 
+@mixin ajuste-lateral{
+    display: grid;
+    grid-template-columns: 24px 1fr;
+    align-items: center;
+    gap: 15px;
+
+    a{
+        font-size: 24px;
+        font-weight: bold;
+        color: $blanco;
+        text-decoration: none;
+    }
+}
+
+@mixin grid-menu-lateral{
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 10px;
+}
+
 //*Configuracion general*/
 *{
     font-family: roboto;
@@ -18,22 +38,6 @@ $gris-letra:#8C8C8C;
 
 
 //*Configuracion del SVG*/
-    //*Barra lateral*/
-header{
-        svg{
-            width: 48px;
-            height: 48px;
-            fill: $blanco;
-        }
-}
-
-aside{
-    svg{
-        width: 24px;
-        height: 24px;
-        fill: $blanco;
-    }
-}
 
     //*Contenido*/
 main{
@@ -56,12 +60,66 @@ body{
     header{
         background-color: $azul;
         height: 100vh;
+
+    
+
+        #titulo{
+            display: grid;
+            grid-template-columns: 48px 1fr;
+            align-items: center;
+            margin-bottom: 50px;
+
+            margin-top: 20px;
+            margin-left: 25px;
+
+            h1{
+                font-size: 42px;
+                color: $blanco;
+            }
+
+            svg{
+                width: 48px;
+                height: 48px;
+                fill: $blanco;
+            }
+        }
+
+        aside{
+            display: grid;
+            grid-template-columns: 1fr;
+            gap: 30px;
+
+            margin-left: 25px;
+
+            svg{
+                width: 26px;
+                height: 26px;
+                fill: $blanco;
+            }
+
+            #menu-principal{
+                @include grid-menu-lateral;
+
+                li{
+                    @include ajuste-lateral;
+                }
+            }
+
+            #menu-secundario{
+                @include grid-menu-lateral;
+
+                li{
+                    @include ajuste-lateral;
+                }
+            }
+        }
     }
 
     main{
         display: grid;
         grid-template-columns: 1fr;
         grid-template-rows: 1fr 5fr;
+
         #top-section{
             background-color: $blanco;
         }
