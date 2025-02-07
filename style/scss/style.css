@@ -173,4 +173,21 @@ body main #top-section #interaciones input {
 }
 body main #bottom-section {
   background-color: #E2E8F0;
+  display: grid;
+  grid-template-columns: 4fr 1fr;
+  grid-template-rows: repeat(2, auto);
+  gap: 30px;
+  padding: 30px;
+}
+body main #bottom-section #proyectos {
+  grid-column: 1/2;
+  grid-row: 1/3;
+}
+body main #bottom-section #anuncios {
+  grid-column: 2/3;
+  grid-row: 1/2;
+}
+body main #bottom-section #tendencias {
+  grid-column: 2/3;
+  grid-row: 2/3;
 }/*# sourceMappingURL=style.css.map */
