@@ -28,6 +28,11 @@ $gris-letra:#8C8C8C;
     gap: 10px;
 }
 
+@mixin centrar-icono-contenido{
+    display: grid;
+    align-items: center;
+}
+
 //*Configuracion general*/
 *{
     font-family: roboto;
@@ -40,13 +45,8 @@ $gris-letra:#8C8C8C;
 //*Configuracion del SVG*/
 
     //*Contenido*/
-main{
-    svg{
-        width: 24px;
-        height: 24px;
-        fill: $negro;
-    }
-}
+
+
 
 /*-----------------------------*/
     //*general*/
@@ -120,8 +120,39 @@ body{
         grid-template-columns: 1fr;
         grid-template-rows: 1fr 5fr;
 
+        svg{
+            width: 24px;
+            height: 24px;
+            fill: $negro;
+        }
+
         #top-section{
             background-color: $blanco;
+            display: grid;
+            grid-template-columns: 3fr 1fr;
+
+
+            #busqueda{
+                @include centrar-icono-contenido;
+                grid-template-columns: 24px 1fr;
+                gap: 12px;
+
+                padding: 20px;
+
+                svg{
+                    width: 30px;
+                    height: 30px;
+                    fill: $negro;
+                }
+
+                input{
+                    background-color: $gris;
+                    border: none;
+                    border-radius: 15px;
+                    height: 30px;
+                }
+            }
+
         }
 
         #bottom-section{

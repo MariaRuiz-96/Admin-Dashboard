@@ -6,12 +6,6 @@
   padding: 0px;
 }
 
-main svg {
-  width: 24px;
-  height: 24px;
-  fill: #000000;
-}
-
 /*-----------------------------*/
 body {
   display: grid;
@@ -90,8 +84,33 @@ body main {
   grid-template-columns: 1fr;
   grid-template-rows: 1fr 5fr;
 }
+body main svg {
+  width: 24px;
+  height: 24px;
+  fill: #000000;
+}
 body main #top-section {
   background-color: #FFFFFF;
+  display: grid;
+  grid-template-columns: 3fr 1fr;
+}
+body main #top-section #busqueda {
+  display: grid;
+  align-items: center;
+  grid-template-columns: 24px 1fr;
+  gap: 12px;
+  padding: 20px;
+}
+body main #top-section #busqueda svg {
+  width: 30px;
+  height: 30px;
+  fill: #000000;
+}
+body main #top-section #busqueda input {
+  background-color: #E2E8F0;
+  border: none;
+  border-radius: 15px;
+  height: 30px;
 }
 body main #bottom-section {
   background-color: #E2E8F0;
