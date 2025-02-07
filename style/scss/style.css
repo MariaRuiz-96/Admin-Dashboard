@@ -83,7 +83,7 @@ body header aside #menu-secundario li a {
 body main {
   display: grid;
   grid-template-columns: 1fr;
-  grid-template-rows: 1fr 5fr;
+  grid-template-rows: auto 5fr;
 }
 body main svg {
   width: 24px;
@@ -131,6 +131,28 @@ body main #top-section #perfil-top #img-pequeña-perfil {
 body main #top-section #perfil-top p {
   font-size: 18px;
   font-weight: bold;
+}
+body main #top-section #saludo-perfil {
+  display: grid;
+  align-items: center;
+  grid-template-columns: auto 1fr;
+  gap: 15px;
+  padding: 20px;
+  padding-top: 0px;
+}
+body main #top-section #saludo-perfil #img-grande-perfil {
+  background-color: #E2E8F0;
+  width: 65px;
+  height: 65px;
+  border-radius: 100%;
+}
+body main #top-section #saludo-perfil p {
+  font-size: 14px;
+  margin-bottom: auto;
+}
+body main #top-section #saludo-perfil #perfil-nick {
+  font-size: 24px;
+  font-weight: bolder;
 }
 body main #bottom-section {
   background-color: #E2E8F0;
