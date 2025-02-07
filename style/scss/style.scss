@@ -16,26 +16,15 @@ $gris-letra:#8C8C8C;
     padding: 0px;
 }
 
-html{
-    height: 100%;
-}
-body{
-    display: grid;
-    grid-template-columns: 1fr 5fr;
-    grid-template-rows: auto 1fr;
-    height: 100%;
-}
 
 //*Configuracion del SVG*/
     //*Barra lateral*/
 header{
-    section{
         svg{
             width: 48px;
             height: 48px;
             fill: $blanco;
         }
-    }
 }
 
 aside{
@@ -56,3 +45,30 @@ main{
 }
 
 /*-----------------------------*/
+    //*general*/
+
+body{
+    display: grid;
+    grid-template-columns: 1fr 5fr;
+    grid-template-rows: auto 1fr;
+    height: 100vh;
+
+    header{
+        background-color: $azul;
+        height: 100vh;
+    }
+
+    main{
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr 5fr;
+        #top-section{
+            background-color: $blanco;
+        }
+
+        #bottom-section{
+            background-color: $gris;
+
+        }
+    }
+}

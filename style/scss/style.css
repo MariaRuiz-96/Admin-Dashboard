@@ -6,18 +6,7 @@
   padding: 0px;
 }
 
-html {
-  height: 100%;
-}
-
-body {
-  display: grid;
-  grid-template-columns: 1fr 5fr;
-  grid-template-rows: auto 1fr;
-  height: 100%;
-}
-
-header section svg {
+header svg {
   width: 48px;
   height: 48px;
   fill: #FFFFFF;
@@ -35,4 +24,25 @@ main svg {
   fill: #000000;
 }
 
-/*-----------------------------*//*# sourceMappingURL=style.css.map */
+/*-----------------------------*/
+body {
+  display: grid;
+  grid-template-columns: 1fr 5fr;
+  grid-template-rows: auto 1fr;
+  height: 100vh;
+}
+body header {
+  background-color: #1992D4;
+  height: 100vh;
+}
+body main {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 1fr 5fr;
+}
+body main #top-section {
+  background-color: #FFFFFF;
+}
+body main #bottom-section {
+  background-color: #E2E8F0;
+}/*# sourceMappingURL=style.css.map */
