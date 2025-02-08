@@ -16,7 +16,7 @@ body {
 }
 body header {
   background-color: #1992D4;
-  height: 100vh;
+  height: 100%;
 }
 body header #titulo {
   display: grid;

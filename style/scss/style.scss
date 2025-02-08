@@ -47,14 +47,7 @@ $gris-letra:#8C8C8C;
 }
 
 
-//*Configuracion del SVG*/
-
-    //*Contenido*/
-
-
-
 /*-----------------------------*/
-    //*general*/
 
 body{
     display: grid;
@@ -64,9 +57,7 @@ body{
 
     header{
         background-color: $azul;
-        height: 100vh;
-
-    
+        height: 100%;
 
         #titulo{
             display: grid;
