@@ -321,6 +321,49 @@ body{
             #tendencias{
                 grid-column: 2/3;
                 grid-row: 2/3;
+
+                display: grid;
+                grid-template-columns: 1fr;
+                grid-template-rows: auto 1f;
+
+                h2{
+                    @include tamaño-titulo-bottom-section();
+                }
+
+                #seccion-tendencias{
+                    background-color: $blanco;
+                    border-radius: 20px;
+                    padding: 20px;
+
+                    display: grid;
+                    grid-template-columns: 1fr;
+                    gap: 10px;
+                    article{
+                        display: grid;
+                        grid-template-columns: auto 1fr;
+                        grid-template-rows: auto 1fr;
+
+                       .foto-perfil-tendencia{
+                        grid-column: 1/2;
+                        grid-row: 1/3;
+
+                        background-color: $gris;
+                        width: 40px;
+                        height: 40px;
+                        border-radius: 100%;
+                       }
+
+                       a{
+                        text-decoration: none;
+                        color: $negro;
+                       }
+
+                       p{
+                        font-size: 14px;
+                        color: $gris-letra;
+                       }
+                    }
+                }
             }
         }
     }

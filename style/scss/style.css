@@ -257,4 +257,40 @@ body main #bottom-section #anuncios #cartas-anuncios article:last-child {
 body main #bottom-section #tendencias {
   grid-column: 2/3;
   grid-row: 2/3;
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: auto 1f;
+}
+body main #bottom-section #tendencias h2 {
+  font-size: 32px;
+  margin-bottom: 10px;
+}
+body main #bottom-section #tendencias #seccion-tendencias {
+  background-color: #FFFFFF;
+  border-radius: 20px;
+  padding: 20px;
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 10px;
+}
+body main #bottom-section #tendencias #seccion-tendencias article {
+  display: grid;
+  grid-template-columns: auto 1fr;
+  grid-template-rows: auto 1fr;
+}
+body main #bottom-section #tendencias #seccion-tendencias article .foto-perfil-tendencia {
+  grid-column: 1/2;
+  grid-row: 1/3;
+  background-color: #E2E8F0;
+  width: 40px;
+  height: 40px;
+  border-radius: 100%;
+}
+body main #bottom-section #tendencias #seccion-tendencias article a {
+  text-decoration: none;
+  color: #000000;
+}
+body main #bottom-section #tendencias #seccion-tendencias article p {
+  font-size: 14px;
+  color: #8C8C8C;
 }/*# sourceMappingURL=style.css.map */
