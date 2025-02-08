@@ -194,7 +194,7 @@ body main #bottom-section #proyectos #contenedor-proyectos {
   display: grid;
   grid-template-columns: 1fr 1fr;
   grid-template-rows: auto;
-  gap: 15px;
+  gap: 25px;
 }
 body main #bottom-section #proyectos #contenedor-proyectos article {
   background-color: #FFFFFF;
