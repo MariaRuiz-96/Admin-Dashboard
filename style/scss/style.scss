@@ -33,6 +33,11 @@ $gris-letra:#8C8C8C;
     align-items: center;
 }
 
+@mixin tamaño-titulo-bottom-section{
+    font-size: 32px;
+    margin-bottom: 10px;
+}
+
 //*Configuracion general*/
 *{
     font-family: roboto;
@@ -224,11 +229,32 @@ body{
             display: grid;
             grid-template-columns: 4fr 1fr;
             grid-template-rows: repeat(2,auto);
-            gap: 30px;
+            gap: 25px;
             padding: 30px;
             #proyectos{
                 grid-column: 1/2;
                 grid-row: 1/3;
+                display: grid;
+                grid-template-columns: auto;
+                grid-template-rows: auto 1fr;
+                h2{
+                    @include tamaño-titulo-bottom-section();
+                }
+
+                #contenedor-proyectos{
+                    display: grid;
+                    grid-template-columns: 1fr 1fr;
+                    grid-template-rows: auto;
+                    gap: 15px;
+
+
+                    article{
+                        background-color: $blanco;
+                        border-left: 10px solid #F0B429;
+                        border-radius: 20px;
+                        padding: 25px;
+                    }
+                }
             }
 
             #anuncios{
